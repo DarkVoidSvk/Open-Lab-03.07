@@ -6,7 +6,15 @@ namespace Open_Lab_03._07
     {
         public bool EqualSlices(int total, int people, int each)
         {
-            throw new NotImplementedException();
+            int calculation = people * each;
+            if ((calculation < total) || (calculation == total))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
